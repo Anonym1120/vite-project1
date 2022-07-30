@@ -1,8 +1,10 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
-import { ElMessage } from "element-plus";
+import { ElMessage } from 'element-plus'
+
 ElMessage.success("Test ElMessage Success");
+
 </script>
 
 <template>
