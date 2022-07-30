@@ -1,7 +1,6 @@
 <script setup>
 import TheWelcome from '@/components/TheWelcome.vue'
-import { reactive } from "vue";
-import { ElMessage } from "element-plus";
+import { reactive } from "vue"
 import { apiTableData } from '../api/index'
 
 const parameters = reactive({
@@ -11,12 +10,10 @@ const parameters = reactive({
 const getTableData = () => {
   apiTableData(parameters)
   .then(response => {
-    console.log(response);
-    ElMessage.success(response.data.data.memberName);
+    console.log(response.data)
   })
   .catch(error => {
-    console.log(error);
-    ElMessage.success(error);
+    console.log(error)
   })
 };
 </script>
@@ -25,5 +22,8 @@ const getTableData = () => {
   <main>
     <TheWelcome />
   </main>
-  <el-button @click="getTableData">Default Button</el-button>
+  <el-row class="mb-4">
+    <el-button @click="getTableData">Default Button</el-button>
+  </el-row>
+  
 </template>
