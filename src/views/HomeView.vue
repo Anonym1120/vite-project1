@@ -1,16 +1,18 @@
 <script setup>
 import TheWelcome from '@/components/TheWelcome.vue'
-import { reactive } from "vue"
 import { apiTableData } from '../api/index'
 
-const parameters = reactive({
-  memberId: '',
-})
+// const parameters = reactive({
+//   memberId: '',
+// })
 
 const getTableData = () => {
-  apiTableData(parameters)
+  apiTableData()
   .then(response => {
+    console.log(response)
     console.log(response.data)
+    console.log(response.data.list)
+    console.log(response.data.list[0])
   })
   .catch(error => {
     console.log(error)
