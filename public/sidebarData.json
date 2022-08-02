@@ -1,0 +1,53 @@
+{
+    "items":[
+        {
+            "path": "/notice",
+            "name": "notice",
+            "title": "公告相關"
+        },
+        {
+            "path": "/attendance",
+            "name": "attendance",
+            "title": "差勤與簽核"
+        },
+        {
+            "path": "/hr",
+            "name": "hr",
+            "title": "人資相關"
+        },
+        {
+            "path": "/marketing",
+            "name": "marketing",
+            "title": "行銷管理"
+        },
+        {
+            "path": "/market",
+            "name": "market",
+            "title": "商場管理"
+        },
+        {
+            "path": "/property",
+            "name": "property",
+            "title": "物業管理",
+            "children": [
+                {
+                    "path": "/property2-1",
+                    "name": "property2-1",
+                    "title": "物業管理2-1",
+                    "children":[
+                        {
+                            "path": "/property3-1",
+                            "name": "property3-1",
+                            "title": "物業管理3-1"
+                        },
+                        {
+                            "path": "/property3-2",
+                            "name": "property3-2",
+                            "title": "物業管理3-2"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
