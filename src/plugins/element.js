@@ -5,3 +5,4 @@ import 'element-plus/theme-chalk/index.css'
 export default (app) => {
     app.use(elementPlus, { locale: localeZH })
 }
+
